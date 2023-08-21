@@ -1,7 +1,4 @@
 /*
  * Custom CSS
  */
-
-:root {
-  --bs-body-bg: var(--bs-gray-100);
-}
+.dropdown:hover .dropdown-menu {display: block;}
