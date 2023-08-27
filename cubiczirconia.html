@@ -13,69 +13,85 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Casey Woods</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="projects.html"
-                id="navbarDropdown"
-                role="button"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Projects
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="asteroidescape.html">Asteroid Field Escape</a></li>
-                  <li><a class="dropdown-item" href="cubiczirconia.html">Cubic Zirconia</a></li>
-                  <li><a class="dropdown-item" href="growableores.html">Growable Ores</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="resume.html">Resume</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container">
+              <a class="navbar-brand" href="index.html">Casey Woods</a>
+              <button class="navbar-toggler"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#navbarSupportedContent"
+                      aria-controls="navbarSupportedContent"
+                      aria-expanded="false"
+                      aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                          <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle"
+                             href="projects.html"
+                             id="navbarDropdown"
+                             role="button"
+                             aria-haspopup="true"
+                             aria-expanded="false">
+                              Projects
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="asteroidescape.html">Asteroid Field Escape</a></li>
+                              <li><a class="dropdown-item active" href="cubiczirconia.html">Cubic Zirconia</a></li>
+                              <li><a class="dropdown-item" href="growableores.html">Growable Ores</a></li>
+                          </ul>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="resume.html">Resume</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="contact.html">Contact</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
 
-    <div class="container my-5">
-      <h1>Cubic Zirconia</h1>
-      <div class="col-lg-8 px-0">
-        <p class="fs-5">
-          2022 | Unity
-        </p>
-        <p>A 3D puzzle game made as part of a QUT Game Development Club Game Jam.</p>
-          <img src="Cubic Zirconia Gameplay.png" width="100%"/>
+      <div class="container my-5">
+          <h1>Cubic Zirconia</h1>
+          <div class="col-lg-8 px-0">
+              <p class="fs-5">
+                  2022 | Unity
+              </p>
+              <p>A 3D puzzle game made as part of a QUT Game Development Club Game Jam.</p>
+          </div>
       </div>
-    </div>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-      crossorigin="anonymous"
-    ></script>
-    <script src="main.js"></script>
+      <!-- START CAROUSEL -->
+      <div id="myCarousel" class="carousel slide mb-6 aligncenter" width="75%" data-bs-ride="carousel">
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img src="Cubic Zirconia Menu.png" width="75%" />
+                  <h1>Menu Screen</h1>
+                  <p>The menu screen of the game, showcasing the logo</p>
+              </div>
+              <div class="carousel-item">
+                  <img src="Cubic Zirconia Gameplay.png" width="75%" />
+                  <h1>First level</h1>
+                  <p>The first 'level' of the game, with instructions on how to play</p>
+              </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+      <!-- END CAROUSEL -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+              integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+              crossorigin="anonymous"></script>
+      <script src="main.js"></script>
   </body>
 </html>
